@@ -1,0 +1,13 @@
+N = int(input())
+
+n=N
+num=0
+while True:
+    a=(n//10) + (n%10)
+    b=n%10
+    new=(10*b)+(a%10)
+    num+=1
+    if new==N:
+        break
+    n=new
+print(num)
