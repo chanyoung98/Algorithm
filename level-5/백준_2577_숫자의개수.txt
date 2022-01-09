@@ -1,0 +1,7 @@
+A=int(input())
+B=int(input())
+C=int(input())
+
+val = A*B*C
+for i in range(0,10):
+    print(list(str(val)).count(str(i))) #count는 문자열로 사용 가능
