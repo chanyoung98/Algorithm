@@ -1,0 +1,10 @@
+nums = []
+n = 0
+for i in range(9):
+    num = int(input())
+    n+=1
+    nums.append(num)
+    if n==9:
+        maximum = max(nums)
+        print(maximum)
+        print(nums.index(maximum)+1)
