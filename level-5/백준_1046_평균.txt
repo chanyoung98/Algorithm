@@ -1,0 +1,14 @@
+a = int(input())
+score = list(map(int, input().split()))
+M = max(score)
+new = []
+mean = 0
+
+for i in range(a):
+    n = score[i]
+    new.append((n/M)*100)
+for j in new:
+    mean+=j
+mean=mean/a
+
+print(mean)
