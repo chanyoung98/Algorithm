@@ -1,0 +1,5 @@
+def solve(a):
+    n=0
+    for i in list(a):
+       n+=i
+    return n
