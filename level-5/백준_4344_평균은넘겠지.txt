@@ -1,0 +1,11 @@
+n = int(input())
+
+for _ in range(n):
+    a=0
+    num = list(map(int, input().split()))
+    mean = sum(num[1:])/num[0]
+    for i in num[1:]:
+        if i > mean:
+            a+=1
+    rate = a/num[0]*100
+    print(f'{rate:.3f}%')
