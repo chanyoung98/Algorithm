@@ -1,0 +1,8 @@
+n = int(input())
+
+for _ in range(n):
+    num, abc = input().split()
+    num=int(num)
+    for i in abc:
+        print(i*num, end='')
+    print('')
