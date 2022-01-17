@@ -1,0 +1,12 @@
+s = input().upper()
+u_s = list(set(s))
+lis = []
+
+for i in u_s:
+    count = s.count(i)
+    lis.append(count)
+
+if lis.count(max(lis)) > 1:
+    print("?")
+else:
+    print(u_s[lis.index(max(lis))])
