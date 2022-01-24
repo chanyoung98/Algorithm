@@ -1,0 +1,7 @@
+n = int(input())
+a_n=1 #시작점, 벌집
+num=1 #횟수
+while n>a_n:
+    a_n = a_n+6*num
+    num+=1
+print(num)
