@@ -1,0 +1,22 @@
+첫 풀이
+
+A, B, V = map(int, input().split())
+
+m = A-B #하루에 올라가는 거리
+dis=0 #누적거리
+day=0 #지난 날짜
+while dis<V:
+    day+=1
+    if dis+A>=V:
+        break
+    dis+=m
+print(day) 
+
+-> 시간 초과. 날짜를 수식으로 전개해서 구할 필요가 있었음
+
+A*day-B(day-1)>=V를 전개하여 코드 작성
+
+A, B, V = map(int, input().split())
+
+k = (V-B)/(A-B)
+print(int(k) if k==int(k) else int(k)+1)
