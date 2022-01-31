@@ -1,0 +1,19 @@
+M = int(input())
+N = int(input())
+
+list=[]
+#소수 구하는 알고리즘부터 만들자
+for i in range(M,N+1):
+    error=0
+    if i>1:
+        for j in range(2,i):
+            if i%j==0:
+                error+=1
+        if error==0:
+            list.append(i)
+            
+if list==[]:
+    print(-1)
+else:
+    print(sum(list))
+    print(min(list))
