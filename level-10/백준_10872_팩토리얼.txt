@@ -1,0 +1,11 @@
+def factorial(n):
+    result = 1
+    if n > 0 :
+        result = n * factorial(n-1)
+    return result
+
+#재귀함수 : 자기자신을 포함하고 또 사용함
+#마무리 수를 지정해주고, 마무리 수가 될때까지 그 함수가 반복하는 구조라고 생각하자
+
+n = int(input())
+print(factorial(n))
